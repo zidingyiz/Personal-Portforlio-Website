@@ -25,12 +25,8 @@
         <h1 class="hero-title">Hello<br>I'm Qijun<br>Zhou</h1>
         <a class="btn" href="assets/Qijun-Zhou-CV.pdf">Download CV</a>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-visual-card">
-          <span>UBC</span>
-          <strong>B.A.Sc.</strong>
-          <small>Electrical Engineering</small>
-        </div>
+      <div class="hero-visual">
+        <img class="hero-photo" src="assets/images/portrait.jpeg" alt="Portrait of Qijun Zhou" />
       </div>
     </div>
     <div class="hero-copy">
@@ -94,38 +90,62 @@
         <article class="skill-card">
           <div class="subsection-label">Programming</div>
           <h3>C, Embedded C & Python</h3>
-          <p>Programming foundation in C, Embedded C, Python, and MATLAB for engineering computation, control logic, and technical prototyping.</p>
-          <div class="skill-match">Matches: Reflow Oven Controller, Transfer Function Visualizer</div>
+          <ul class="skill-list">
+            <li>C and Embedded C programming foundation</li>
+            <li>Python and MATLAB for engineering computation</li>
+            <li>Control logic and technical prototyping</li>
+          </ul>
+          <div class="skill-match">Matches: <a href="#project-reflow">Reflow Oven Controller</a>, <a href="#project-transfer">Transfer Function Visualizer</a></div>
         </article>
         <article class="skill-card">
           <div class="subsection-label">Digital Systems</div>
           <h3>SystemVerilog & FPGA Flow</h3>
-          <p>Experience with SystemVerilog, Intel Quartus, Questa, RISC-V concepts, and DE10-Lite FPGA development workflows.</p>
-          <div class="skill-match">Matches: Reflow Oven Controller, Computing Systems</div>
+          <ul class="skill-list">
+            <li>SystemVerilog and RISC-V concepts</li>
+            <li>Intel Quartus and Questa workflow</li>
+            <li>DE10-Lite FPGA development</li>
+          </ul>
+          <div class="skill-match">Matches: <a href="#project-reflow">Reflow Oven Controller</a>, <a href="courses.html">Computing Systems</a></div>
         </article>
         <article class="skill-card">
           <div class="subsection-label">Hardware</div>
           <h3>Lab Instruments & Prototyping</h3>
-          <p>Hands-on familiarity with microcontrollers, oscilloscopes, signal generators, breadboards, soldering irons, multimeters, and basic circuit tools.</p>
-          <div class="skill-match">Matches: Reflow Oven Controller, Circuit Courses</div>
+          <ul class="skill-list">
+            <li>Microcontrollers and breadboard prototyping</li>
+            <li>Oscilloscope, signal generator, and multimeter use</li>
+            <li>Soldering iron and basic circuit tools</li>
+          </ul>
+          <div class="skill-match">Matches: <a href="#project-reflow">Reflow Oven Controller</a>, <a href="courses.html">Circuit Courses</a></div>
         </article>
         <article class="skill-card">
           <div class="subsection-label">Electrical</div>
           <h3>Circuit Analysis & Design</h3>
-          <p>Coursework and project practice in circuit analysis, circuit components, measurement, control, and display systems.</p>
-          <div class="skill-match">Matches: Reflow Oven Controller, Transfer Function Visualizer</div>
+          <ul class="skill-list">
+            <li>Circuit analysis and component-level reasoning</li>
+            <li>Measurement, control, and display systems</li>
+            <li>Hardware/software integration practice</li>
+          </ul>
+          <div class="skill-match">Matches: <a href="#project-reflow">Reflow Oven Controller</a>, <a href="#project-transfer">Transfer Function Visualizer</a></div>
         </article>
         <article class="skill-card">
           <div class="subsection-label">Software Tools</div>
           <h3>VS Code, Visual Studio & QLab</h3>
-          <p>Comfortable using development environments for programming work, plus QLab for live theatre sound design and cue operation.</p>
-          <div class="skill-match">Matches: Face Drama Club, Project Documentation</div>
+          <ul class="skill-list">
+            <li>Visual Studio and Visual Studio Code</li>
+            <li>QLab cue design for live theatre</li>
+            <li>Project documentation and debugging workflow</li>
+          </ul>
+          <div class="skill-match">Matches: <a href="experience.html#volunteer-facedrama">Face Drama Club</a>, <a href="#projects">Project Documentation</a></div>
         </article>
         <article class="skill-card">
           <div class="subsection-label">Communication</div>
           <h3>Research & Technical Writing</h3>
-          <p>Independent publication experience, bilingual communication, and technical documentation across engineering, research, and presentation contexts.</p>
-          <div class="skill-match">Matches: Published Article, CICC</div>
+          <ul class="skill-list">
+            <li>Independent publication experience</li>
+            <li>Mandarin and English communication</li>
+            <li>Technical documentation and research writing</li>
+          </ul>
+          <div class="skill-match">Matches: <a href="#article">Published Article</a>, <a href="experience.html#work-cicc">CICC</a></div>
         </article>
       </div>
     </section>
@@ -133,42 +153,38 @@
     <section id="projects" class="section wrap">
       <h2 class="section-title">Projects</h2>
       <div class="projects">
-        <article class="project-card">
+        <article id="project-field" class="project-card">
           <a class="project-media" href="project/field-tracking-robot.html" aria-label="Open Field Tracking Robot project page">
-            <div class="art art-blue">
-              <svg viewBox="0 0 500 320" role="img" aria-label="Robot illustration"><circle cx="250" cy="160" r="82" fill="#e5e3e2"/><rect x="118" y="120" width="260" height="120" rx="60" fill="#c0c9d6"/><circle cx="215" cy="155" r="8"/><circle cx="285" cy="155" r="8"/><path d="M225 190 Q250 210 275 190" stroke="#333" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M120 175 C60 150 55 235 120 230" fill="#aeb8c8"/><path d="M380 175 C445 145 450 235 380 230" fill="#aeb8c8"/><circle cx="390" cy="245" r="22" fill="#858f9e"/><circle cx="110" cy="245" r="22" fill="#858f9e"/></svg>
-            </div>
+            <img class="project-image project-photo" src="assets/images/field-tracking-robot.jpeg" alt="Field tracking robot prototype" />
           </a>
           <div class="project-info">
-            <h3 class="project-title"><a href="project/field-tracking-robot.html">Field Tracking<br>Robot</a></h3>
+            <h3 class="project-title"><a href="project/field-tracking-robot.html">Field Tracking Robot</a></h3>
             <p class="project-desc">Robot-side control logic for track following, intersection handling, motor balancing, and serial debugging.</p>
             <div class="project-skill-tags"><span>C</span><span>Embedded Logic</span><span>Debugging</span></div>
-            <div class="project-links"><a class="mini-btn" href="#">Demo</a><a class="mini-btn" href="https://github.com/zidingyiz" target="_blank" rel="noreferrer">GitHub</a></div>
+            <div class="project-links"><a class="mini-btn" href="https://youtu.be/Fl7GQ-YdvV0" target="_blank" rel="noreferrer">Demo</a><a class="mini-btn" href="https://github.com/zidingyiz/Field-Tracking-Robot" target="_blank" rel="noreferrer">GitHub</a></div>
           </div>
         </article>
 
-        <article class="project-card">
+        <article id="project-reflow" class="project-card">
           <a class="project-media" href="project/reflow-oven-controller.html" aria-label="Open Reflow Oven Controller project page">
-            <div class="art art-pink">
-              <svg viewBox="0 0 500 320" role="img" aria-label="Oven controller illustration"><circle cx="250" cy="175" r="82" fill="#d8d9d4"/><path d="M210 115 L255 35 L300 115 Z" fill="#b8aaa0"/><circle cx="225" cy="170" r="7"/><circle cx="277" cy="170" r="7"/><path d="M232 203 Q250 217 268 203" stroke="#333" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="120" cy="225" r="30" fill="#b8c6bd"/><circle cx="390" cy="230" r="38" fill="#b8c6bd"/></svg>
-            </div>
+            <img class="project-image project-photo" src="assets/images/oven-reflow-controller.jpeg" alt="Oven reflow controller prototype" />
           </a>
           <div class="project-info">
-            <h3 class="project-title"><a href="project/reflow-oven-controller.html">Reflow Oven<br>Controller</a></h3>
+            <h3 class="project-title"><a href="project/reflow-oven-controller.html">Reflow Oven Controller</a></h3>
             <p class="project-desc">A DE10-Lite FPGA and external-circuit oven controller with ADC acquisition, temperature computation, display handling, and FSM-based operating states.</p>
             <div class="project-skill-tags"><span>8051 Assembly</span><span>SystemVerilog</span><span>Quartus</span></div>
-            <div class="project-links"><a class="mini-btn" href="#">Demo</a><a class="mini-btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div>
+            <div class="project-links"><a class="mini-btn" href="https://youtu.be/hFFiqIETEzM">Demo</a><a class="mini-btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div>
           </div>
         </article>
 
-        <article class="project-card">
+        <article id="project-transfer" class="project-card">
           <a class="project-media" href="project/transfer-function-visualizer.html" aria-label="Open Transfer Function Visualizer project page">
             <div class="art art-lilac">
               <svg viewBox="0 0 500 320" role="img" aria-label="Plot illustration"><path d="M70 235 C125 70 205 280 255 160 S355 40 430 210" fill="none" stroke="#d3a64a" stroke-width="16" stroke-linecap="round"/><path d="M95 245 H420" stroke="#444" stroke-width="5"/><path d="M95 245 V65" stroke="#444" stroke-width="5"/><circle cx="182" cy="172" r="12" fill="#333"/><circle cx="306" cy="127" r="12" fill="#333"/></svg>
             </div>
           </a>
           <div class="project-info">
-            <h3 class="project-title"><a href="project/transfer-function-visualizer.html">Transfer Function<br>Visualizer</a></h3>
+            <h3 class="project-title"><a href="project/transfer-function-visualizer.html">Transfer Function Visualizer</a></h3>
             <p class="project-desc">A small MATLAB/Python-style visualization concept for transfer functions, poles and zeros, Bode plots, and filter behavior.</p>
             <div class="project-skill-tags"><span>MATLAB</span><span>Signals</span><span>Visualization</span></div>
             <div class="project-links"><a class="mini-btn" href="#">Demo</a><a class="mini-btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div>
@@ -177,12 +193,10 @@
 
         <article id="article" class="project-card">
           <a class="project-media" href="https://doi.org/10.54097/hset.v28i.4100" target="_blank" rel="noreferrer" aria-label="Open published article">
-            <div class="art art-gold">
-              <svg viewBox="0 0 500 320" role="img" aria-label="Article and tower illustration"><rect x="122" y="70" width="210" height="180" rx="18" fill="#f7f7f3"/><path d="M166 220 L218 100 L270 220 Z" fill="#b6b0a4"/><path d="M218 100 V220" stroke="#646862" stroke-width="7"/><path d="M184 175 H252M194 150 H242M204 125 H232" stroke="#646862" stroke-width="7" stroke-linecap="round"/><rect x="295" y="108" width="70" height="112" rx="10" fill="#c9d3cf"/><path d="M312 132 H348M312 156 H348M312 180 H348" stroke="#646862" stroke-width="6" stroke-linecap="round"/></svg>
-            </div>
+            <img class="project-image" src="assets/images/article.png" alt="Highlights in Science, Engineering and Technology Volume 28 cover" />
           </a>
           <div class="project-info">
-            <h3 class="project-title"><a href="https://doi.org/10.54097/hset.v28i.4100" target="_blank" rel="noreferrer">Published<br>Article</a></h3>
+            <h3 class="project-title"><a href="https://doi.org/10.54097/hset.v28i.4100" target="_blank" rel="noreferrer">Published Article</a></h3>
             <p class="project-desc">Independent author of research on technological innovation in super high-rise buildings, published in <em>Highlights in Science, Engineering and Technology</em>.</p>
             <div class="project-skill-tags"><span>Research</span><span>Writing</span><span>Presentation</span></div>
             <div class="project-links"><a class="mini-btn" href="https://doi.org/10.54097/hset.v28i.4100" target="_blank" rel="noreferrer">Article</a></div>
