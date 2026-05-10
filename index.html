@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qijun Zhou | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner wrap">
+      <a href="#work">Work & Volunteer</a>
+      <a href="#projects">Project</a>
+      <a href="#about">About</a>
+      <a href="interests.html">Interests</a>
+      <a href="courses.html">School Course</a>
+    </div>
+  </nav>
+
+  <header class="hero wrap">
+    <div>
+      <h1 class="hero-title">Hello<br>I’m Qijun<br>Zhou</h1>
+      <a class="btn" href="assets/Qijun-Zhou-CV.pdf">Download CV</a>
+    </div>
+    <div class="hero-copy">
+      <p>I am an Electrical Engineering undergraduate student at UBC interested in embedded systems, robotics, circuit design, and practical engineering projects. Download the CV to know more about my background.</p>
+      <div class="social">
+        <a href="https://github.com/zidingyiz" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="www.linkedin.com/in/qijun-zhou-055467357" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:zhou@example.com">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="work" class="section wrap">
+      <h2 class="section-title">Work & Volunteer</h2>
+      <div class="work-list">
+        <article class="work-row">
+          <div>
+            <div class="subsection-label">Volunteer</div>
+            <h3 class="work-name"><a href="experience.html#volunteer-facedrama">UBC Facedrama Club</a></h3>
+            <div class="date">November 2024 – Now</div>
+          </div>
+          <div>
+            <p class="work-desc">Sound designer for student theatre productions. Responsible for selecting, editing, and cueing audio assets to support stage performance.</p>
+            <div class="project-links subtle-links"><a class="mini-btn" href="experience.html#volunteer-facedrama">Details</a></div>
+            <div class="tags"><span class="tag">Audio</span><span class="tag">Teamwork</span><span class="tag">Sound Design</span></div>
+          </div>
+        </article>
+        <article class="work-row">
+          <div>
+            <div class="subsection-label">Work</div>
+            <h3 class="work-name"><a href="experience.html#work-cicc">CICC</a></h3>
+            <div class="date">July 2024 – August 2024</div>
+          </div>
+          <div>
+            <p class="work-desc">Workplace platform mobile app project focused on long-listing features and front-end implementation practice.</p>
+            <div class="project-links subtle-links"><a class="mini-btn" href="experience.html#work-cicc">Details</a></div>
+            <div class="tags"><span class="tag">Financial Analysis</span><span class="tag">Frontend</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section wrap">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects">
+        <article class="project-card">
+          <a class="project-media" href="project/field-tracking-robot.html" aria-label="Open Field Tracking Robot project page">
+            <div class="art art-blue">
+              <svg viewBox="0 0 500 320" role="img" aria-label="Robot illustration"><circle cx="250" cy="160" r="82" fill="#f7dfe2"/><rect x="118" y="120" width="260" height="120" rx="60" fill="#c0cbe5"/><circle cx="215" cy="155" r="8"/><circle cx="285" cy="155" r="8"/><path d="M225 190 Q250 210 275 190" stroke="#333" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M120 175 C60 150 55 235 120 230" fill="#b0bbd8"/><path d="M380 175 C445 145 450 235 380 230" fill="#b0bbd8"/><circle cx="390" cy="245" r="22" fill="#8f99b5"/><circle cx="110" cy="245" r="22" fill="#8f99b5"/></svg>
+            </div>
+          </a>
+          <div class="project-info">
+            <h3 class="project-title"><a href="project/field-tracking-robot.html">Field Tracking<br>Robot</a></h3>
+            <p class="project-desc">Designed and implemented robot-side control logic for magnetic track following, intersection handling, motor balancing, and serial debugging.</p>
+            <div class="project-links"><a class="mini-btn" href="#">Demo</a><a class="mini-btn" href="https://github.com/zidingyiz" target="_blank" rel="noreferrer">GitHub</a></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-media" href="project/reflow-oven-controller.html" aria-label="Open Reflow Oven Controller project page">
+            <div class="art art-pink">
+              <svg viewBox="0 0 500 320" role="img" aria-label="Oven controller illustration"><circle cx="250" cy="175" r="82" fill="#f5c884"/><path d="M210 115 L255 35 L300 115 Z" fill="#f0a86d"/><circle cx="225" cy="170" r="7"/><circle cx="277" cy="170" r="7"/><path d="M232 203 Q250 217 268 203" stroke="#333" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="120" cy="225" r="30" fill="#bbd5c5"/><circle cx="390" cy="230" r="38" fill="#bbd5c5"/></svg>
+            </div>
+          </a>
+          <div class="project-info">
+            <h3 class="project-title"><a href="project/reflow-oven-controller.html">Reflow Oven<br>Controller</a></h3>
+            <p class="project-desc">A microcontroller-based temperature controller interface with staged profiles, display logic, UART configuration, and state-machine control.</p>
+            <div class="project-links"><a class="mini-btn" href="#">Demo</a><a class="mini-btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <a class="project-media" href="project/transfer-function-visualizer.html" aria-label="Open Transfer Function Visualizer project page">
+            <div class="art art-lilac">
+              <svg viewBox="0 0 500 320" role="img" aria-label="Plot illustration"><path d="M70 235 C125 70 205 280 255 160 S355 40 430 210" fill="none" stroke="#d3a64a" stroke-width="16" stroke-linecap="round"/><path d="M95 245 H420" stroke="#444" stroke-width="5"/><path d="M95 245 V65" stroke="#444" stroke-width="5"/><circle cx="182" cy="172" r="12" fill="#333"/><circle cx="306" cy="127" r="12" fill="#333"/></svg>
+            </div>
+          </a>
+          <div class="project-info">
+            <h3 class="project-title"><a href="project/transfer-function-visualizer.html">Transfer Function<br>Visualizer</a></h3>
+            <p class="project-desc">A small Python-based tool to visualize transfer functions, poles and zeros, Bode plots, and circuit filter behavior.</p>
+            <div class="project-links"><a class="mini-btn" href="#">Demo</a><a class="mini-btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap about">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I am building this portfolio as a simple engineering homepage for co-op applications, project documentation, and course records. The visual direction is intentionally quiet: large grey typography, soft blocks, generous spacing, and project pages that can grow over time.</p>
+          <p>You can replace this placeholder text with a short personal statement, your technical interests, design-team goals, and the kind of internship roles you are targeting.</p>
+        </div>
+        <aside class="contact-card">
+          <div class="label">Email</div>
+          <a href="zhouqj24@student.ubc.ca">zhouqj24@student.ubc.ca</a>
+          <div class="label">Phone</div>
+          <span>(+1) 236 865 0379</span>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>Designed in Figma · Built with HTML & CSS</div>
+    <div>Qijun Zhou · 2026</div>
+  </footer>
+</body>
+</html>
