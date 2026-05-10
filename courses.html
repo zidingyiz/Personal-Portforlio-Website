@@ -7,39 +7,49 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="nav"><div class="nav-inner wrap"><a href="index.html#work">Work & Volunteer</a><a href="index.html#projects">Project</a><a href="index.html#about">About</a><a href="interests.html">Interests</a><a href="courses.html">School Course</a></div></nav>
-  <main class="wrap">
-    <header class="page-hero">
-      <div class="eyebrow">School Course</div>
-      <h1 class="page-title">Course Record</h1>
-      <p class="lead">A course archive grouped by academic period. Click any course to expand details, grade, credits, and notes. The descriptions are placeholders and can be rewritten later.</p>
-      <div class="course-tools"><input id="courseSearch" class="course-filter" type="search" placeholder="Search course code or title..." /></div>
+  <nav class="nav"><div class="nav-inner wrap"><a href="index.html#work">Work & Volunteer</a><a href="index.html#skills">Skills</a><a href="index.html#projects">Project</a><a href="index.html#about">About</a><a href="interests.html">Interests</a><a href="courses.html">School Course</a></div></nav>
+  <main>
+    <header class="course-hero">
+      <div class="wrap course-hero-inner">
+        <div>
+          <div class="eyebrow">School Course</div>
+          <h1 class="page-title">Course Record</h1>
+          <p class="lead">A selected UBC course archive grouped by academic period. Click any course to expand details, credits, grades, and engineering notes.</p>
+          <div class="course-tools"><input id="courseSearch" class="course-filter" type="search" placeholder="Search course code or title..." /></div>
+        </div>
+        <div class="ubc-mark" aria-hidden="true"><img src="https://wiki.ubc.ca/images/2/25/UBC_Logo_small.png" alt="" /></div>
+      </div>
     </header>
 
-    <section class="year-block">
-      <h2 class="year-title">2024–25 Winter Session</h2>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">APSC 160</span><div class="course-name">Introduction to Computation in Engineering Design</div></span><span class="course-grade">3 credits · B+ · 76</span></button><div class="course-body">Programming fundamentals and engineering design computation. Placeholder for projects, languages, and notes.</div></div>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">MATH 100</span><div class="course-name">Differential Calculus with Applications</div></span><span class="course-grade">3 credits · A · 87</span></button><div class="course-body">Limits, derivatives, optimization, and engineering applications.</div></div>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">PHYS 157</span><div class="course-name">Introductory Physics for Engineers I</div></span><span class="course-grade">3 credits · A+ · 90</span></button><div class="course-body">Mechanics, waves, and introductory engineering physics topics.</div></div>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">MATH 152</span><div class="course-name">Linear Systems</div></span><span class="course-grade">3 credits · A- · 84</span></button><div class="course-body">Linear algebra, matrix systems, eigenvalues, and engineering applications.</div></div>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">WRDS 150</span><div class="course-name">Writing and Research in the Disciplines</div></span><span class="course-grade">3 credits · B · 74</span></button><div class="course-body">Academic writing, source evaluation, and research communication.</div></div>
-    </section>
+    <div class="wrap course-content">
+      <section class="year-block">
+        <h2 class="year-title">2024-25 Winter Session</h2>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">APSC 160</span><div class="course-name">Introduction to Computation in Engineering Design</div></span><span class="course-grade">3 credits · B+ · 76</span></button><div class="course-body">Programming fundamentals and engineering design computation, building a foundation for structured problem solving.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">MATH 100</span><div class="course-name">Differential Calculus with Applications</div></span><span class="course-grade">3 credits · A · 87</span></button><div class="course-body">Limits, derivatives, optimization, and engineering applications.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">PHYS 157</span><div class="course-name">Introductory Physics for Engineers I</div></span><span class="course-grade">3 credits · A+ · 90</span></button><div class="course-body">Mechanics, waves, and introductory engineering physics topics.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">MATH 152</span><div class="course-name">Linear Systems</div></span><span class="course-grade">3 credits · A- · 84</span></button><div class="course-body">Linear algebra, matrix systems, eigenvalues, and engineering applications.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">WRDS 150</span><div class="course-name">Writing and Research in the Disciplines</div></span><span class="course-grade">3 credits · B · 74</span></button><div class="course-body">Academic writing, source evaluation, and research communication.</div></div>
+      </section>
 
-    <section class="year-block">
-      <h2 class="year-title">2025 Summer Session</h2>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">MATH 253</span><div class="course-name">Multivariable Calculus</div></span><span class="course-grade">3 credits · A- · 82</span></button><div class="course-body">Partial derivatives, multiple integrals, vector fields, and engineering applications.</div></div>
-    </section>
+      <section class="year-block">
+        <h2 class="year-title">2025 Summer Session</h2>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">MATH 253</span><div class="course-name">Multivariable Calculus</div></span><span class="course-grade">3 credits · A- · 82</span></button><div class="course-body">Partial derivatives, multiple integrals, vector fields, and engineering applications.</div></div>
+      </section>
 
-    <section class="year-block">
-      <h2 class="year-title">2025–26 Winter Session</h2>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">CPSC 259</span><div class="course-name">Data Structures and Algorithms for Electrical Engineers</div></span><span class="course-grade">4 credits · B+ · 79</span></button><div class="course-body">C programming, data structures, algorithmic thinking, and software engineering foundations.</div></div>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">ELEC 201</span><div class="course-name">Circuit Analysis I</div></span><span class="course-grade">4 credits · B · 74</span></button><div class="course-body">Circuit laws, linear circuit analysis, transient response, and AC steady-state concepts.</div></div>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">MATH 256</span><div class="course-name">Differential Equations</div></span><span class="course-grade">3 credits · B+ · 77</span></button><div class="course-body">ODE methods and applied modelling for engineering systems.</div></div>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">CPEN 211</span><div class="course-name">Computing Systems I</div></span><span class="course-grade">5 credits · C+ · 65</span></button><div class="course-body">Digital logic, computer architecture, assembly-level thinking, and hardware/software interface.</div></div>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">ELEC 221</span><div class="course-name">Signals and Systems</div></span><span class="course-grade">4 credits · in progress</span></button><div class="course-body">LTI systems, convolution, Fourier series/transform, Laplace transform, Z-transform, and sampling.</div></div>
-      <div class="course-item"><button class="course-toggle"><span><span class="course-code">ELEC 291</span><div class="course-name">Electrical Engineering Design Studio I</div></span><span class="course-grade">6 credits · in progress</span></button><div class="course-body">Team-based engineering design project with embedded control, sensing, debugging, and documentation.</div></div>
-    </section>
-    <a class="back-link" href="index.html">← Back Home</a>
+      <section class="year-block">
+        <h2 class="year-title">2025-26 Winter Session</h2>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">CPSC 259</span><div class="course-name">Data Structures and Algorithms for Electrical Engineers</div></span><span class="course-grade">4 credits · B+ · 79</span></button><div class="course-body">C programming, data structures, algorithmic thinking, and software engineering foundations for electrical engineers.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">ELEC 201</span><div class="course-name">Circuit Analysis I</div></span><span class="course-grade">4 credits · B · 74</span></button><div class="course-body">Circuit laws, linear circuit analysis, transient response, and AC steady-state concepts.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">MATH 256</span><div class="course-name">Differential Equations</div></span><span class="course-grade">3 credits · B+ · 77</span></button><div class="course-body">ODE methods and applied modelling for engineering systems.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">ELEC 221</span><div class="course-name">Signals and Systems</div></span><span class="course-grade">4 credits · C- · 55</span></button><div class="course-body">LTI systems, convolution, Fourier series/transform, Laplace transform, Z-transform, and sampling.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">CPEN 211</span><div class="course-name">Computing Systems I</div></span><span class="course-grade">5 credits · C+ · 65</span></button><div class="course-body">Digital logic, computer architecture, assembly-level thinking, and hardware/software interface.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">MATH 264</span><div class="course-name">Vector Calculus for Electrical Engineering</div></span><span class="course-grade">1 credit · B+ · 78</span></button><div class="course-body">Vector calculus topics connected to electrical engineering fields and systems.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">ELEC 211</span><div class="course-name">Engineering Electromagnetics</div></span><span class="course-grade">2 credits · B+ · 78</span></button><div class="course-body">Electromagnetic field concepts and engineering applications.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">ELEC 291</span><div class="course-name">Electrical Engineering Design Studio I</div></span><span class="course-grade">6 credits · A · 86</span></button><div class="course-body">Team-based engineering design project with embedded control, sensing, debugging, and documentation.</div></div>
+        <div class="course-item"><button class="course-toggle"><span><span class="course-code">APSC 107</span><div class="course-name">Introduction to Applied Science Co-op</div></span><span class="course-grade">0 credits · P</span></button><div class="course-body">Co-op preparation and professional development for Applied Science students.</div></div>
+      </section>
+      <a class="back-link" href="index.html">Back Home</a>
+    </div>
   </main>
   <footer class="footer"><div>Qijun Zhou · Course Archive</div></footer>
   <script src="script.js"></script>
