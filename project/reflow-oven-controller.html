@@ -1,1 +1,47 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Reflow Oven Controller | Qijun Zhou</title><link rel="stylesheet" href="../style.css"></head><body><nav class="nav"><div class="nav-inner wrap"><a href="../index.html#work">Work & Volunteer</a><a href="../index.html#skills">Skills</a><a href="../index.html#projects">Project</a><a href="../index.html#about">About</a><a href="../interests.html">Interests</a><a href="../courses.html">School Course</a></div></nav><main class="wrap"><header class="page-hero"><div class="eyebrow">Project Detail</div><h1 class="page-title">Reflow Oven Controller</h1><p class="lead">A five-person oven control project using the DE10-Lite FPGA development board, external circuit components, and embedded control logic.</p><div class="project-links"><a class="mini-btn" href="https://youtu.be/hFFiqIETEzM">Demo</a><a class="mini-btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div></header><section class="content-grid"><article class="detail-card"><h2>Overview</h2><p>Designed and implemented a temperature measurement, control, and display system for an oven using FPGA and external circuit hardware.</p></article><article class="detail-card"><h2>Tech Stack</h2><ul><li>DE10-Lite FPGA development board</li><li>8051 assembly language</li><li>CV-8052 soft-core</li><li>SystemVerilog</li><li>Intel Quartus</li><li>ADC data acquisition</li></ul></article><article class="detail-card wide"><h2>Implementation Notes</h2><p>Developed embedded control logic for ADC acquisition, temperature computation, display handling, and finite-state machine control across idle, heating, and steady-state modes.</p></article></section><a class="back-link" href="../index.html#projects">Back to Projects</a></main><footer class="footer"><div>Qijun Zhou · Reflow Oven Controller</div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflow Oven Controller | Qijun Zhou</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="nav"><div class="nav-inner wrap"><a href="../index.html#work">Work & Volunteer</a><a href="../index.html#skills">Skills</a><a href="../index.html#projects">Project</a><a href="../index.html#about">About</a><a href="../interests.html">Interests</a><a href="../courses.html">School Course</a></div></nav>
+  <main class="wrap">
+    <header class="page-hero">
+      <div class="eyebrow">Project Detail</div>
+      <h1 class="page-title">Reflow Oven Controller</h1>
+      <p class="lead">A five-person oven control project using the DE10-Lite FPGA development board, external circuit components, and embedded control logic.</p>
+      <div class="project-links"><a class="mini-btn" href="https://youtu.be/hFFiqIETEzM">Demo</a><a class="mini-btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></div>
+    </header>
+    <section class="content-grid">
+      <article class="detail-card">
+        <h2>Overview</h2>
+        <p>Designed and implemented a temperature measurement, control, and display system for an oven using FPGA and external circuit hardware.</p>
+      </article>
+      <article class="detail-card">
+        <h2>Tech Stack</h2>
+        <ul>
+          <li>DE10-Lite FPGA development board</li>
+          <li>8051 assembly language</li>
+          <li>CV-8052 soft-core</li>
+          <li>SystemVerilog</li>
+          <li>Intel Quartus</li>
+          <li>ADC data acquisition</li>
+        </ul>
+      </article>
+      <article class="detail-card wide">
+        <h2>Implementation Notes</h2>
+        <ul>
+          <li>Developed embedded control logic in 8051 assembly language, including ADC data acquisition, temperature computation, and display handling.</li>
+          <li>Implemented a finite state machine (FSM) to control oven operating states, including idle, heating, and steady state, based on temperature thresholds.</li>
+          <li>Deployed system by synthesizing and loading the CV-8052 soft-core (System Verilog) onto the DE10-Lite using Intel Quartus.</li>
+        </ul>
+      </article>
+    </section>
+    <a class="back-link" href="../index.html#projects">Back to Projects</a>
+  </main>
+  <footer class="footer"><div>Qijun Zhou · Reflow Oven Controller</div></footer>
+</body>
+</html>
