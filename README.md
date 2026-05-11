@@ -4,9 +4,9 @@ A personal portfolio website for Qijun Zhou, built as a lightweight static site 
 
 ## Live Site
 
-GitHub Pages can be enabled from the repository settings. Once enabled, the site will be available at:
+This portfolio is deployed with Netlify:
 
-https://zidingyiz.github.io/Personal-Portforlio-Website/
+https://kenzhou.netlify.app/
 
 ## Pages
 
@@ -21,7 +21,7 @@ https://zidingyiz.github.io/Personal-Portforlio-Website/
 - HTML
 - CSS
 - JavaScript
-- GitHub Pages
+- Netlify
 
 ## Project Structure
 
