@@ -7,18 +7,18 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <nav class="nav"><div class="nav-inner wrap"><a href="../index.html#work">Work & Volunteer</a><a href="../index.html#skills">Skills</a><a href="../index.html#projects">Project</a><a href="../index.html#about">About</a><a href="../interests.html">Interests</a><a href="../courses.html">School Course</a></div></nav>
+  <nav class="nav"><div class="nav-inner wrap"><a href="../index.html#work">Work</a><a href="../index.html#skills">Skills</a><a href="../index.html#projects">Project</a><a href="../index.html#volunteer">Volunteer</a><a href="../index.html#about">About</a><a href="../interests.html">Interests</a><a href="../courses.html">School Course</a></div></nav>
   <main class="wrap">
     <header class="page-hero">
       <div class="eyebrow">Project Detail</div>
       <h1 class="page-title">Reflow Oven Controller</h1>
-      <p class="lead">A five-person oven control project using the DE10-Lite FPGA development board, external circuit components, and embedded control logic.</p>
+      <p class="lead">A group oven-control project that used the DE10-Lite FPGA development board, external circuit components, CV-8052 embedded logic, and finite-state control to measure, compute, display, and regulate oven temperature.</p>
       <div class="project-links"><a class="mini-btn" href="https://youtu.be/hFFiqIETEzM">Demo</a><a class="mini-btn" href="https://github.com/zidingyiz/Oven-Reflow-Control-System" target="_blank" rel="noreferrer">GitHub</a></div>
     </header>
     <section class="content-grid">
       <article class="detail-card">
         <h2>Overview</h2>
-        <p>Designed and implemented a temperature measurement, control, and display system for an oven using FPGA and external circuit hardware.</p>
+        <p>Designed and implemented a temperature measurement, control, and display system for an oven using FPGA-based embedded logic and external circuit hardware.</p>
       </article>
       <article class="detail-card">
         <h2>Tech Stack</h2>
@@ -34,9 +34,10 @@
       <article class="detail-card wide">
         <h2>Implementation Notes</h2>
         <ul>
-          <li>Developed embedded control logic in 8051 assembly language, including ADC data acquisition, temperature computation, and display handling.</li>
-          <li>Implemented a finite state machine (FSM) to control oven operating states, including idle, heating, and steady state, based on temperature thresholds.</li>
-          <li>Deployed system by synthesizing and loading the CV-8052 soft-core (System Verilog) onto the DE10-Lite using Intel Quartus.</li>
+          <li>Designed and implemented a temperature measurement, control, and display system for an oven using the DE10-Lite FPGA development board and external circuit components.</li>
+          <li>Developed embedded control logic on the CV-8052 soft-core in 8051 assembly language, including ADC data acquisition, temperature computation, and display handling.</li>
+          <li>Implemented a finite-state machine to control oven operating states, including idle, heating, and steady state, based on temperature thresholds.</li>
+          <li>Deployed the system by synthesizing and loading the CV-8052 soft-core in SystemVerilog onto the DE10-Lite using Intel Quartus.</li>
         </ul>
       </article>
     </section>
