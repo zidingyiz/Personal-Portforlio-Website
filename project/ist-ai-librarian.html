@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A portfolio case study of an internal AI-assisted sensor product knowledge and retrieval system.">
+  <title>IST Sensor Product AI Librarian | Qijun Zhou</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="nav"><div class="nav-inner wrap"><a href="../index.html#work">Work</a><a href="../index.html#skills">Skills</a><a href="../index.html#projects">Project</a><a href="../index.html#volunteer">Volunteer</a><a href="../index.html#about">About</a><a href="../interests.html">Interests</a><a href="../courses.html">School Course</a></div></nav>
+  <main class="wrap">
+    <header class="page-hero">
+      <div class="eyebrow">Internal Project · Case Study</div>
+      <h1 class="page-title">IST Sensor Product AI Librarian</h1>
+      <p class="lead">An AI-assisted internal product knowledge and retrieval system for industrial sensor products—developed to make varied technical documents easier to structure, validate, search, and use.</p>
+      <div class="project-skill-tags"><span>Internal Pilot</span><span>AI-assisted Retrieval</span><span>Product Data</span></div>
+    </header>
+
+    <section class="content-grid">
+      <article class="detail-card wide">
+        <h2>Overview</h2>
+        <p>Industrial sensor information is often distributed across datasheets, product sheets, model naming conventions, order codes, and existing structured records. The AI Librarian project brings these sources into a consistent product knowledge model so employees can find relevant products and technical information more efficiently.</p>
+        <p>I helped move the work from a broad internal need toward a usable pilot: decomposing the problem, modelling product data, defining extraction and validation rules, shaping query requirements, integrating the application, and supporting testing, debugging, deployment preparation, and internal rollout. AI-assisted development tools supported implementation and refactoring, while the architecture, data rules, validation criteria, and testing decisions remained deliberate engineering work.</p>
+      </article>
+
+      <article class="detail-card">
+        <h2>The Problem</h2>
+        <p>As product families and variants grow, a simple lookup can require navigating from category to family, model, variant, document, and finally the required specification. The challenge is not merely reading PDFs: document layouts, parameter names, table structures, and model rules vary between sensor categories.</p>
+        <p>The system therefore treats retrieval as a data-engineering problem first. Product information must be normalized and checked before an AI layer can use it reliably.</p>
+      </article>
+
+      <article class="detail-card">
+        <h2>Technologies</h2>
+        <p>Technologies used or integrated during the project include:</p>
+        <ul>
+          <li>Python and Streamlit</li>
+          <li>JSON and CSV product data</li>
+          <li>LLM APIs and retrieval-augmented generation concepts</li>
+          <li>Structured and vector-based retrieval</li>
+          <li>Git-based development workflow</li>
+          <li>Linux deployment, Nginx, and HTTPS/TLS</li>
+        </ul>
+      </article>
+
+      <article class="detail-card wide">
+        <h2>From Datasheets to Structured Knowledge</h2>
+        <p>I helped design and iterate a shared data model that connects sensor families, product models, variants, technical specifications, dimensions, pin information, and supporting documents. This creates a consistent foundation across categories such as temperature, conductivity, flow, and biosensing without exposing proprietary model details.</p>
+        <p>The processing workflow collects relevant documents, extracts parameters, normalizes equivalent terms and units, classifies models and variants, and validates the resulting records. Canonical parameter definitions, extraction rules, classification logic, conflict handling, and review steps help turn differently formatted engineering documents into queryable product knowledge.</p>
+        <div class="architecture-flow" aria-label="Data processing flow">
+          <div class="architecture-node">Technical Documents</div><div class="architecture-arrow">→</div>
+          <div class="architecture-node">Extraction</div><div class="architecture-arrow">→</div>
+          <div class="architecture-node">Normalization</div><div class="architecture-arrow">→</div>
+          <div class="architecture-node">Validation</div><div class="architecture-arrow">→</div>
+          <div class="architecture-node">Structured Knowledge</div>
+        </div>
+      </article>
+
+      <article class="detail-card wide">
+        <h2>Validation Before Generation</h2>
+        <p>The system is not designed to send a document directly to an LLM and accept whatever answer it produces. It cross-checks information from technical documents, product sheets, model-decoding rules, and existing structured data. When sources disagree, predefined priority and conflict-handling rules determine whether a value can be accepted or should be flagged for review. This keeps deterministic product facts separate from generative interpretation.</p>
+      </article>
+
+      <article class="detail-card wide">
+        <h2>Building the Retrieval System</h2>
+        <p>The query layer combines deterministic product filtering with LLM-assisted interpretation and contextual retrieval. A natural-language question is interpreted into product categories and technical constraints; structured filters identify eligible products; relevant supporting knowledge is retrieved; and the response layer presents an answer grounded in that context.</p>
+        <p>This hybrid approach is useful for questions involving several operating constraints. Structured retrieval handles exact product attributes, while semantic retrieval helps locate relevant explanatory material. The LLM assists with query planning and presentation rather than replacing the underlying product data.</p>
+        <div class="architecture-flow" aria-label="Simplified system architecture">
+          <div class="architecture-node">Product Documents</div><div class="architecture-arrow">→</div>
+          <div class="architecture-node">Structured Product Knowledge</div><div class="architecture-arrow">→</div>
+          <div class="architecture-node">Filtering + Context Retrieval</div><div class="architecture-arrow">→</div>
+          <div class="architecture-node">LLM Query Layer</div><div class="architecture-arrow">→</div>
+          <div class="architecture-node">Streamlit Web App</div>
+        </div>
+      </article>
+
+      <article class="detail-card wide">
+        <h2>Architecture Diagram</h2>
+        <pre class="mermaid">
+flowchart TD
+    A[IST Technical Documents] --> B[Document Processing]
+    B --> C[Structured Product Knowledge]
+    C --> D[Product Filtering]
+    C --> E[Semantic Retrieval]
+    D --> F[LLM-assisted Query Layer]
+    E --> F
+    F --> G[Streamlit Internal Web App]
+    G --> H[Internal Users]
+        </pre>
+      </article>
+
+      <article class="detail-card">
+        <h2>From Prototype to Internal Deployment</h2>
+        <p>The project progressed from local experiments to a Streamlit-based internal application with search, user interaction, and administrative support. I worked with the deployment lifecycle, including application packaging, environment configuration, Linux hosting, an Nginx reverse proxy, and HTTPS/TLS.</p>
+        <p>The result is an internally deployed pilot being prepared for broader testing and continued iteration—not a fully autonomous or finished enterprise platform.</p>
+      </article>
+
+      <article class="detail-card">
+        <h2>My Role</h2>
+        <ul>
+          <li>Problem decomposition and system design</li>
+          <li>Product knowledge and data modelling</li>
+          <li>Extraction, classification, and validation rules</li>
+          <li>Query requirements and system integration</li>
+          <li>Testing, debugging, and Git workflow</li>
+          <li>Deployment preparation and internal pilot launch</li>
+        </ul>
+      </article>
+
+      <article class="detail-card wide">
+        <h2>Current Status</h2>
+        <p>The system has reached its first internal pilot stage and is being prepared for internal testing and further iterative development. Source code remains in a private company repository.</p>
+      </article>
+
+      <article class="detail-card wide confidentiality-note">
+        <h2>Information intentionally omitted for confidentiality</h2>
+        <p>The production URL, private repository, internal credentials, infrastructure details, and proprietary product information have been intentionally omitted.</p>
+      </article>
+    </section>
+    <a class="back-link" href="../index.html#projects">Back to Projects</a>
+  </main>
+  <footer class="footer"><div>Qijun Zhou · IST Sensor Product AI Librarian</div></footer>
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "neutral", securityLevel: "strict" });
+  </script>
+</body>
+</html>

@@ -110,6 +110,17 @@ section[id]{scroll-margin-top:88px}
 .project-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
 .mini-btn{border:1px solid #bfc5c6;border-radius:999px;color:#4d555a;text-decoration:none;text-transform:uppercase;letter-spacing:.22em;font-size:10px;font-weight:850;padding:11px 17px;background:rgba(255,255,255,.35)}
 .mini-btn:hover{background:#fff}
+.status-label{display:inline-flex;align-items:center;cursor:default}
+.art-ist{min-height:300px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:38px;background:linear-gradient(145deg,#dce8e5 0%,#edf1ee 48%,#b9ceca 100%);color:#4f6865;position:relative;overflow:hidden}
+.art-ist::before,.art-ist::after{content:"";position:absolute;border:1px solid rgba(255,255,255,.72);border-radius:50%}
+.art-ist::before{width:260px;height:260px;right:-48px;top:-76px;box-shadow:0 0 0 34px rgba(255,255,255,.14),0 0 0 70px rgba(255,255,255,.08)}
+.art-ist::after{width:92px;height:92px;right:40px;top:54px;background:rgba(255,255,255,.22)}
+.art-ist span{position:relative;z-index:1;font-size:11px;letter-spacing:.18em;text-transform:uppercase;max-width:260px;line-height:1.7;margin-bottom:12px}
+.art-ist strong{position:relative;z-index:1;font-size:clamp(30px,4vw,48px);line-height:1.02;letter-spacing:-.04em}
+.architecture-flow{display:flex;align-items:stretch;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}
+.architecture-node{flex:1 1 130px;min-width:120px;padding:18px 12px;border-radius:16px;background:#f1f5f4;border:1px solid rgba(91,119,114,.12);text-align:center;color:#596d69;font-size:12px;line-height:1.55;font-weight:750}
+.architecture-arrow{display:flex;align-items:center;color:#9aaba8;font-size:20px}
+.confidentiality-note{border-left:3px solid #a9bdb9;padding-left:18px}
 .about-band{background:linear-gradient(135deg,rgba(235,237,236,.62),rgba(255,255,255,.62) 45%,rgba(226,231,233,.32));border-top:1px solid rgba(0,0,0,.035)}
 .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
 .about-grid .section-title{margin-bottom:30px}
@@ -197,6 +208,7 @@ section[id]{scroll-margin-top:88px}
   .project-card:nth-child(even) .project-info{text-align:left}
   .project-card:nth-child(even) .project-links,.project-card:nth-child(even) .project-skill-tags{justify-content:flex-start}
   .project-title a{white-space:normal}
+  .architecture-arrow{transform:rotate(90deg);flex-basis:100%;justify-content:center;height:12px}
   .course-grade{white-space:normal;text-align:right}
   .ubc-mark{justify-self:start}
   .audio-item,.feature-audio{grid-template-columns:1fr}
