@@ -79,6 +79,7 @@ section[id]{scroll-margin-top:88px}
 .date{font-size:11px;letter-spacing:.1em;color:#9ca1a5;margin-top:7px}
 .work-company-image{display:block;width:100%;height:112px;object-fit:cover;border-radius:16px;margin-top:20px;filter:saturate(.78);border:1px solid rgba(119,130,137,.08)}
 .work-company-logo{object-fit:contain;background:#fff;padding:15px}
+.work-company-logo-ist{background:linear-gradient(145deg,#fff,#eef7fa);padding:18px}
 .work-desc{font-size:14px;line-height:1.8;color:#697075;margin:0}
 .tags,.project-skill-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 .tag,.project-skill-tags span{font-size:10px;border-radius:999px;background:#e8e8e6;color:#747b80;padding:5px 11px}
@@ -115,6 +116,7 @@ section[id]{scroll-margin-top:88px}
 .project-image-label{position:absolute;left:20px;right:20px;bottom:18px;padding:12px 16px;border-radius:999px;background:rgba(244,248,247,.88);backdrop-filter:blur(10px);color:#546b68;font-size:10px;letter-spacing:.16em;text-transform:uppercase;text-align:center;font-weight:850}
 .project-image{width:100%;height:100%;min-height:300px;display:block;object-fit:contain;background:#eef1f2;padding:20px}
 .project-photo{object-fit:cover;padding:0}
+.project-logo{object-fit:contain;padding:38px;background:linear-gradient(145deg,#f8fbfb,#e8f3f7)}
 .art{height:100%;min-height:300px;display:flex;align-items:center;justify-content:center;position:relative}
 .art svg{width:78%;height:auto;opacity:.95}
 .art-blue{background:linear-gradient(135deg,#dde6ee,#f1f4f5)}
@@ -145,6 +147,8 @@ section[id]{scroll-margin-top:88px}
 .company-figure{margin:34px 0 0;border-radius:28px;overflow:hidden;background:#eef2f1;border:1px solid rgba(110,127,129,.1)}
 .company-figure img{display:block;width:100%}
 .company-figure-hero img{height:min(42vw,430px);object-fit:cover}
+.company-figure-brand{background:linear-gradient(145deg,#fff,#eaf5f8)}
+.company-figure-brand img{height:min(36vw,360px);object-fit:contain;padding:42px}
 .company-figure-logo{float:right;width:min(42%,390px);margin:0 0 24px 34px;background:#fff}
 .company-figure-logo img{aspect-ratio:16/9;object-fit:contain;padding:24px}
 .company-figure figcaption{padding:11px 16px;color:#879196;font-size:10px;letter-spacing:.08em;background:rgba(255,255,255,.72)}
